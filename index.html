@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Our Love Collage | Varshu & Rajesh 💖</title>
+  <meta name="description" content="A romantic collage of 20 beautiful moments celebrating 7 Months & 7 Days to Forever." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Particle & Heart Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Sticky Mobile-Friendly Header Bar -->
+  <header class="top-nav">
+    <div class="nav-brand">
+      <span class="heart-icon">💖</span>
+      <span class="brand-text">Varshu & Rajesh</span>
+    </div>
+    <div class="nav-actions">
+      <button id="musicToggle" class="nav-btn" aria-label="Toggle Music">
+        <span class="btn-icon">🎵</span>
+        <span class="btn-text">Music</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-badge">
+        <span class="badge-sparkle">✨</span>
+        <span>7 MONTHS &amp; 7 DAYS TO FOREVER</span>
+        <span class="badge-sparkle">✨</span>
+      </div>
+
+      <h1 class="hero-title">
+        Our Love Story <br />
+        <span class="highlight-text">In Frames</span> 📸
+      </h1>
+
+      <p class="hero-subtitle">
+        Happy Birthday my dear Pondatti 🖤. Every single photo here holds a piece of my heart and a memory of us together.
+      </p>
+
+      <!-- Milestone Card -->
+      <div class="milestone-box">
+        <div class="milestone-item">
+          <span class="m-num">7</span>
+          <span class="m-lbl">Months</span>
+        </div>
+        <div class="milestone-plus">+</div>
+        <div class="milestone-item">
+          <span class="m-num">7</span>
+          <span class="m-lbl">Days</span>
+        </div>
+        <div class="milestone-divider"></div>
+        <div class="milestone-tag">Feb 24, 2026 &bull; Oct 1 &bull; Forever ∞</div>
+      </div>
+
+      <div class="scroll-down-hint">
+        <span>Tap or scroll to view our collage</span>
+        <div class="chevron"></div>
+      </div>
+    </section>
+
+    <!-- LOVE QUOTE BANNER -->
+    <section class="quote-banner">
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p class="quote-text">
+          Namba love panna start panni 7 months and 7 days aachu.Namba intha neriya photos sernthu eduthu frame po2 v2la matanum Varshuu! 🖤
+        </p>
+        <span class="quote-author">— Forever Yours, Rajesh 🤍</span>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTER / CONTROLS -->
+    <section class="filter-section">
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all">All Memories</button>
+        <button class="filter-pill" data-filter="highlights">Highlights</button>
+        <button class="filter-pill" data-filter="collage">Collages</button>
+      </div>
+    </section>
+
+    <!-- MASONRY PHOTO GALLERY -->
+    <section class="gallery-section">
+      <div class="masonry-grid" id="masonryGrid">
+
+        <!-- 20 Photo Cards -->
+        <div class="photo-card" data-category="highlights" data-caption="Our First Meet 💖 (Feb 24, 2026)">
+          <div class="img-wrapper">
+            <img src="images/photo1.jpg" alt="Our First Meet" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Our First Meet 💖</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Mar 04, 2026</span>
+            <button class="like-btn" aria-label="Like photo"><span class="heart-symbol">❤️</span> <span class="like-count">12</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Precious Memories Together ✨">
+          <div class="img-wrapper">
+            <img src="images/collage/file_0000000026d08208a08771d8ef653149.png" alt="Collage Photo 1" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Together Forever 💍</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Sweet Moment</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">15</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="highlights" data-caption="Our Second Meet ✨">
+          <div class="img-wrapper">
+            <img src="images/photo2.jpg" alt="Our Second Meet" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Our Second Meet ✨</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Special Day</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">18</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Pure Happiness 💕">
+          <div class="img-wrapper">
+            <img src="images/collage/1773506070571.png" alt="Collage Photo 2" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Collage of Joy 📸</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Happiness</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">9</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Captured Magic ✨">
+          <div class="img-wrapper">
+            <img src="images/collage/file_000000007ed871fda0ae6fcebd54d6d1.png" alt="Collage Photo 3" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Magic in Every Frame ✨</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Love Frame</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">14</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="highlights" data-caption="Our Third Meet 🌸">
+          <div class="img-wrapper">
+            <img src="images/photo3.jpg" alt="Our Third Meet" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Our Third Meet 🌸</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Unforgettable</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">21</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Love Smiles 💖">
+          <div class="img-wrapper">
+            <img src="images/collage/1776013013295.png" alt="Collage Photo 4" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Pure Love Smiles 💗</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Joy</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">11</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Deep Connection 💗">
+          <div class="img-wrapper">
+            <img src="images/collage/file_00000000cae471faa366a7569ba26cfe.png" alt="Collage Photo 5" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Captured Love 💖</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Forever</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">16</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="highlights" data-caption="Our Fourth Meet 💕">
+          <div class="img-wrapper">
+            <img src="images/photo4.jpg" alt="Our Fourth Meet" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Our Fourth Meet 💕</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Special Memories</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">19</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Beginning of Us 🌹">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260223_105347_677.jpg" alt="Collage Photo 6" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">First Saree Pics 🌹</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Feb 2026</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">10</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="The Spark Begins ✨">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260223_105350_519.jpg" alt="Collage Photo 7" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">The Spark Begins ✨</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Early Days</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">8</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="highlights" data-caption="Our Fifth Meet 🌍">
+          <div class="img-wrapper">
+            <img src="images/photo5.jpg" alt="Our Fifth Meet" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Our Fifth Meet 🌍</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">My World</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">25</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Beautiful Smiles 💖">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260223_105354_376.jpg" alt="Collage Photo 8" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Beautiful Smiles 💖</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Happiness</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">13</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Heart to Heart 💗">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260223_105357_799.jpg" alt="Collage Photo 9" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Heart to Heart 💗</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Soulmates</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">17</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="highlights" data-caption="Our Sixth Meet 🌺">
+          <div class="img-wrapper">
+            <img src="images/photo6.jpg" alt="Our Sixth Meet" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Our Sixth Meet 🌺</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Forever Loved</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">30</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Precious Days 🌸">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260223_105403_339.jpg" alt="Collage Photo 10" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Precious Days 🌸</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Sweetness</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">14</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="May Magic 🌿">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG-20260525-WA0002.jpg" alt="Collage Photo 11" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Love Magic 🌿</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">May 2026</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">12</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="August Sunshine ☀️">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260806_130502_416.jpg" alt="Collage Photo 12" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">August Sunshine ☀️</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">August 2026</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">22</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Late Summer Love 🌻">
+          <div class="img-wrapper">
+            <img src="images/collage/IMG_20260831_143027_503.jpg" alt="Collage Photo 13" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Late Summer Love 🌻</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Aug 31, 2026</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">15</span></button>
+          </div>
+        </div>
+
+        <div class="photo-card" data-category="collage" data-caption="Sweet Memories 📱">
+          <div class="img-wrapper">
+            <img src="images/collage/Screenshot_2026-04-14-21-26-31-16_a63b0f8076346d26cbdc1b971a1da2a7.jpg" alt="Collage Photo 14" loading="lazy" />
+            <div class="card-overlay">
+              <span class="expand-icon">🔍 Tap to view</span>
+              <p class="card-caption">Sweet Memories 📱</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">April 2026</span>
+            <button class="like-btn"><span class="heart-symbol">❤️</span> <span class="like-count">19</span></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ROMANTIC LOVE COUNTER & REASON CARD -->
+    <section class="reasons-section">
+      <div class="section-card">
+        <h2 class="card-title">Why I Love You Varshu 💍</h2>
+        <div class="reasons-slider" id="reasonsSlider">
+          <div class="reason-item active">
+            <span class="reason-num">01</span>
+            <p class="reason-text">Intha 7 months la, ena ne romba Love panna... I never felt a love like yours in my whole life! 💖</p>
+          </div>
+          <div class="reason-item">
+            <span class="reason-num">02</span>
+            <p class="reason-text">Your smile brightens up my worst days. You are my true happiness and peace. 🌸</p>
+          </div>
+          <div class="reason-item">
+            <span class="reason-num">03</span>
+            <p class="reason-text">Ne unoda Life la ena aaganum nu nenaikriyo apdiye aagu, nan unakaga support aa un pinnadi tha irken epumey. 🌟</p>
+          </div>
+          <div class="reason-item">
+            <span class="reason-num">04</span>
+            <p class="reason-text">7 months and 7 days is just the start of our story... I want to live with you till my last breath! 💍🖤</p>
+          </div>
+        </div>
+        <div class="slider-dots" id="sliderDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-heart">💖</div>
+      <h3 class="footer-title">Happy Birthday My Chella Varshu 🖤</h3>
+      <p class="footer-sub">Will You Marry Me 💍🖤...</p>
+      <div class="footer-infinity">
+        <span>Feb 24, 2026</span>
+        <span class="line"></span>
+        <span class="inf-symbol">∞</span>
+        <span class="line"></span>
+        <span>Forever</span>
+      </div>
+      <p class="copyright">Crafted with endless love by Rajesh 🤍</p>
+    </footer>
+
+  </main>
+
+  <!-- FULLSCREEN LIGHTBOX -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">&rsaquo;</button>
+    
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Full view" />
+      <p id="lightboxCaption" class="lightbox-caption-text"></p>
+      <div class="lightbox-actions">
+        <button class="lightbox-like-btn" id="lightboxLike"><span class="lb-heart">❤️</span> <span id="lbLikeText">Send Love</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
